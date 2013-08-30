@@ -1,0 +1,205 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" MasterPageFile="" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administrator</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            height: 54px;
+        }
+        .style1
+        {
+            width: 100%;
+        }
+        .style5
+        {
+            width: 339px;
+        }
+        .style6
+        {
+            width: 259px;
+        }
+        .style9
+        {
+        }
+        .style11
+        {
+            width: 100%;
+            font-family: "Adobe Fangsong Std R";
+            color: #006600;
+            font-weight: bold;
+        }
+        .style12
+        {
+            font-family: "Adobe Fangsong Std R";
+            font-weight: bold;
+            color: #006600;
+        }
+        .style14
+        {
+            width: 214px;
+            height: 25px;
+        }
+        .style15
+        {
+            height: 25px;
+        }
+        .style16
+        {
+            width: 214px;
+            height: 46px;
+        }
+        .style17
+        {
+            height: 46px;
+        }
+        .style20
+        {
+            width: 353px;
+        }
+        .style21
+        {
+            width: 214px;
+        }
+        .style22
+        {
+            width: 214px;
+            height: 38px;
+        }
+        .style23
+        {
+            height: 38px;
+        }
+    </style>
+</head>
+<body background="Image/background.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+    
+    </div>
+    <p>
+        &nbsp;</p>
+    <table class="style1">
+        <tr>
+            <td class="style4" colspan="5">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/Students.jpg" 
+                    Width="1185px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style21">
+                <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Image/homeAdd.jpg" 
+                    NavigateUrl="~/Addmin.aspx" ToolTip="Home">Home</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style5" colspan="2">
+                &nbsp;</td>
+            <td class="style6">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style14">
+                <asp:HyperLink ID="HyperLink2" runat="server" ImageUrl="~/Image/Add Univer.jpg" 
+                    NavigateUrl="~/Add_Univer.aspx" ToolTip="Add University">Add University</asp:HyperLink>
+            </td>
+            <td class="style15">
+            </td>
+            <td class="style20" rowspan="2">
+                <asp:HyperLink ID="HyperLink7" runat="server" ImageUrl="~/Image/unix.jpg" 
+                    NavigateUrl="~/Add_Univer.aspx" ToolTip="Add university">Add university</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; Add university...Those are not enter ......&nbsp;</td>
+            <td class="style9" colspan="2" rowspan="2">
+                <asp:HyperLink ID="HyperLink9" runat="server" ImageUrl="~/Image/adst.jpg" 
+                    NavigateUrl="~/Add_Student.aspx" ToolTip="Add Student">Add Student</asp:HyperLink>
+&nbsp;Add you...to as a Student</td>
+        </tr>
+        <tr>
+            <td class="style16">
+                <asp:HyperLink ID="HyperLink3" runat="server" 
+                    ImageUrl="~/Image/Add Studentr.jpg" NavigateUrl="~/Add_Student.aspx" 
+                    ToolTip="Add Student">Add Student</asp:HyperLink>
+            </td>
+            <td class="style17">
+            </td>
+        </tr>
+        <tr>
+            <td class="style21">
+                <asp:HyperLink ID="HyperLink4" runat="server" ImageUrl="~/Image/update Uni.jpg" 
+                    NavigateUrl="~/Update_Univer.aspx" ToolTip="Update University">Update 
+                University</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style5" colspan="2" rowspan="2">
+                <asp:HyperLink ID="HyperLink8" runat="server" ImageUrl="~/Image/AddHom.bmp" 
+                    NavigateUrl="~/Update_Univer.aspx" ToolTip="Update university">Update 
+                university</asp:HyperLink>
+&nbsp; All are update in Update University....</td>
+            <td class="style6" rowspan="2">
+                <span class="style4"><b>
+                <marquee align="left" direction="up" onmouseout="this.start()" 
+                    onmouseover="this.stop()" scrollamount="1" scrolldelay="60" 
+                    style="height: 111px; width: 419px"><table cellpadding="0" cellspacing="0"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width="100%"><tbody><tr><td style="width: 82%;"><img src="Image/NsI.bmp"> <span class="news_date"><font color="#333333"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; face="Hobo Std">Welcome to our website NSI-Nationwise Student Information. This website helps you to find out information about any student from any university over different country. You have to first create your profile properly . You have to log in before search student information
+                    </font></span></img></td></tr></tbody></table></marquee></b></span></td>
+        </tr>
+        <tr>
+            <td class="style22">
+                <asp:HyperLink ID="HyperLink5" runat="server" ImageUrl="~/Image/About_Us.jpg" 
+                    ToolTip="About Us">About Us</asp:HyperLink>
+            </td>
+            <td class="style23">
+            </td>
+        </tr>
+        <tr>
+            <td class="style21">
+                <asp:HyperLink ID="HyperLink6" runat="server" ImageUrl="~/Image/Cont_Us.jpg" 
+                    ToolTip="Contact Us">Contact Us</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style5" colspan="2">
+                &nbsp;</td>
+            <td class="style6">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style21">
+                <asp:HyperLink ID="HyperLink12" runat="server" Font-Bold="True" 
+                    Font-Underline="True" ForeColor="#99FF99" NavigateUrl="~/Sign In.aspx" 
+                    ToolTip="Logout">Logout</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style5" colspan="2">
+                &nbsp;</td>
+            <td class="style6">
+                &nbsp;</td>
+        </tr>
+    </table>
+    <p>
+        &nbsp;</p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="style11">2010-@-Nationwide Student Information.. All Rights 
+        Reserved. Design By Abhimanyu | </span>
+        <asp:HyperLink ID="HyperLink10" runat="server" Font-Underline="True" 
+            ToolTip="Privacy Policy">Privacy Policy</asp:HyperLink>
+        <span class="style12">&nbsp;|</span>
+        <asp:HyperLink ID="HyperLink11" runat="server" Font-Underline="True" 
+            ToolTip="Terms of Use">Terms of use</asp:HyperLink>
+    </p>
+    </form>
+</body>
+</html>
